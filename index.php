@@ -40,8 +40,8 @@
 </main>
 
 <footer>
-    <p>© 2026 - Music World</p>
+    <p> <?php echo date('Y'); ?>
+ - Music World</p>
 </footer>
 
 </body>
-</html>
