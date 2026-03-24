@@ -1,0 +1,39 @@
+nav ul{
+    padding: 10px;
+
+    /* Mágica do flexbox começa aqui*/
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 30px; /*Cria um espaçamento entre os itens */
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    flex: 1; /*Permite que o main ocupe todo o espaço disponível, empurrando o footer para baixo*/
+    align-items: flex-start; /*Alinha os cards ao topo, evitando que fiquem centralizados verticalmente quando tiverem alturas diferentes*/
+}
+
+article{
+    flex:1; /*Faz todos os cards terem a mesma largura*/
+    min-width: 300px; /*Impede que o card fique esmagado parecendo um espaguete*/ 
+    background-color: white; /*Fundo branco destacando a página*/
+    padding: 15px;
+    border-radius: 8px; /*cantos arredondados*/
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1); /*Uma sombra leve para dar profundidade*/
+}
+
+body{
+    background-color: #dfdfdf; /*Fundo cinza claro para um visual mais suave*/
+    font-family: 'Courier New', Courier, monospace;
+    color: #333333;
+
+    display: flex; 
+    flex-direction: column; /*Organiza os elementos em coluna*/
+    min-height: 100vh; /*Garante que o corpo ocupe toda a altura da tela*/
+
+}
+
